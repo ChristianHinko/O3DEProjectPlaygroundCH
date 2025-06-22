@@ -3,6 +3,7 @@
 #include <AzCore/Module/Module.h>
 
 #include "O3DETestGameSystemComponent.h"
+#include "YoComponent.h"
 
 #include <O3DETestGame/O3DETestGameTypeIds.h>
 
@@ -21,6 +22,7 @@ namespace O3DETestGame
             // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
             m_descriptors.insert(m_descriptors.end(), {
                 O3DETestGameSystemComponent::CreateDescriptor(),
+                YoComponent::CreateDescriptor(),
             });
         }
 
@@ -31,6 +33,7 @@ namespace O3DETestGame
         {
             return AZ::ComponentTypeList{
                 azrtti_typeid<O3DETestGameSystemComponent>(),
+                azrtti_typeid<YoComponent>(),
             };
         }
     };
