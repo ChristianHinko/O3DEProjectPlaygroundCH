@@ -260,13 +260,13 @@
                     "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
                         "Translate": [
-                            19.326391220092773,
-                            -36.42055892944336,
-                            11.712692260742188
+                            4.123262882232666,
+                            -4.6691083908081055,
+                            2.2661094665527344
                         ],
                         "Rotate": [
-                            -7.167572975158691,
-                            -4.211851596832275,
+                            -7.167577743530273,
+                            -4.211852073669434,
                             30.286239624023438
                         ]
                     }
@@ -297,69 +297,6 @@
                 "Component_[9129253381063760879]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 9129253381063760879
-                }
-            }
-        },
-        "Entity_[1168049227123]": {
-            "Id": "Entity_[1168049227123]",
-            "Name": "Grid",
-            "Components": {
-                "Component_[11443347433215807130]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 11443347433215807130
-                },
-                "Component_[14249419413039427459]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 14249419413039427459
-                },
-                "Component_[15448581635946161318]": {
-                    "$type": "AZ::Render::EditorGridComponent",
-                    "Id": 15448581635946161318,
-                    "Controller": {
-                        "Configuration": {
-                            "primarySpacing": 4.0,
-                            "primaryColor": [
-                                0.501960813999176,
-                                0.501960813999176,
-                                0.501960813999176
-                            ],
-                            "secondarySpacing": 0.5,
-                            "secondaryColor": [
-                                0.250980406999588,
-                                0.250980406999588,
-                                0.250980406999588
-                            ]
-                        }
-                    }
-                },
-                "Component_[1843303322527297409]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 1843303322527297409
-                },
-                "Component_[380249072065273654]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 380249072065273654,
-                    "Parent Entity": "Entity_[1176639161715]"
-                },
-                "Component_[7476660583684339787]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 7476660583684339787
-                },
-                "Component_[7557626501215118375]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 7557626501215118375
-                },
-                "Component_[7984048488947365511]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 7984048488947365511
-                },
-                "Component_[8118181039276487398]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 8118181039276487398
-                },
-                "Component_[9189909764215270515]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 9189909764215270515
                 }
             }
         },
@@ -503,7 +440,6 @@
                         "Entity_[1155164325235]",
                         "Entity_[1180934129011]",
                         "Entity_[1172344194419]",
-                        "Entity_[1168049227123]",
                         "Entity_[1163754259827]",
                         "Entity_[1159459292531]",
                         "Entity_[1531696715278]",
