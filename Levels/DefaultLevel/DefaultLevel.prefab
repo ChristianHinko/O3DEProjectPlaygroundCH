@@ -785,41 +785,6 @@
                                 "Name": "Mesh",
                                 "Tracks": [
                                     {
-                                        "$type": "TAnimSplineTrack<Vec2>",
-                                        "ParamType": {
-                                            "Type": 8,
-                                            "Name": "SortKey"
-                                        },
-                                        "Spline": {
-                                            "Keys": [
-                                                {
-                                                    "flags": 73,
-                                                    "ds": {
-                                                        "x": 1.0
-                                                    },
-                                                    "dd": {
-                                                        "x": 0.4000000059604645
-                                                    }
-                                                },
-                                                {
-                                                    "time": 0.442864328622818,
-                                                    "flags": 73,
-                                                    "value": {
-                                                        "x": 0.442864328622818,
-                                                        "y": -0.545438289642334
-                                                    },
-                                                    "ds": {
-                                                        "x": 0.13333334028720856
-                                                    },
-                                                    "dd": {
-                                                        "x": 0.13333334028720856
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        "Id": 12
-                                    },
-                                    {
                                         "$type": "CBoolTrack",
                                         "Range": {
                                             "End": 4.0
@@ -829,9 +794,17 @@
                                             "Name": "Visibility"
                                         },
                                         "Keys": [
-                                            {},
+                                            {
+                                                "Time": 0.04456448182463646
+                                            },
+                                            {
+                                                "Time": 0.10000000149011612
+                                            },
                                             {
                                                 "Time": 0.3100000023841858
+                                            },
+                                            {
+                                                "Time": 0.4000000059604645
                                             },
                                             {
                                                 "Time": 0.8999999761581421
@@ -841,6 +814,9 @@
                                             },
                                             {
                                                 "Time": 1.2999999523162842
+                                            },
+                                            {
+                                                "Time": 2.0999999046325684
                                             }
                                         ],
                                         "Id": 13
@@ -866,9 +842,6 @@
                                         "SubTracks": [
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "y": -0.8322210311889648
-                                                },
                                                 "ParamType": {
                                                     "Type": 51
                                                 },
@@ -901,9 +874,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "y": -1.466855525970459
-                                                },
                                                 "ParamType": {
                                                     "Type": 52
                                                 },
@@ -936,9 +906,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "y": 0.49884113669395447
-                                                },
                                                 "ParamType": {
                                                     "Type": 53
                                                 },
@@ -997,9 +964,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "y": -0.10000000149011612
-                                                },
                                                 "ParamType": {
                                                     "Type": 55
                                                 },
@@ -1437,7 +1401,6 @@
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
                                                 "DefaultValue": {
-                                                    "x": 3.5999999046325684,
                                                     "y": -75.59520721435547
                                                 },
                                                 "ParamType": {
@@ -1492,7 +1455,6 @@
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
                                                 "DefaultValue": {
-                                                    "x": 3.5999999046325684,
                                                     "y": -15.540212631225586
                                                 },
                                                 "ParamType": {
@@ -1547,8 +1509,7 @@
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
                                                 "DefaultValue": {
-                                                    "x": 3.5999999046325684,
-                                                    "y": -3.0640413761138916
+                                                    "y": -3.0640389919281006
                                                 },
                                                 "ParamType": {
                                                     "Type": 56
@@ -1620,7 +1581,6 @@
                                 "$type": "CAnimAzEntityNode",
                                 "ID": 8,
                                 "Name": "Global Sky",
-                                "Flags": 6,
                                 "Entity": "Entity_[1180934129011]"
                             },
                             {
@@ -1647,9 +1607,6 @@
                                         "SubTracks": [
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 1.1444090604782104
-                                                },
                                                 "ParamType": {
                                                     "Type": 51
                                                 },
@@ -1657,9 +1614,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 1.1444090604782104
-                                                },
                                                 "ParamType": {
                                                     "Type": 52
                                                 },
@@ -1667,9 +1621,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 1.1444090604782104
-                                                },
                                                 "ParamType": {
                                                     "Type": 53
                                                 },
@@ -1697,9 +1648,6 @@
                                         "SubTracks": [
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 4.0
-                                                },
                                                 "ParamType": {
                                                     "Type": 54
                                                 },
@@ -1720,7 +1668,7 @@
                                                         },
                                                         {
                                                             "time": 3.1893768310546875,
-                                                            "flags": 65609,
+                                                            "flags": 73,
                                                             "value": {
                                                                 "x": 3.1893768310546875,
                                                                 "y": -52.20000076293945
@@ -1751,9 +1699,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 4.0
-                                                },
                                                 "ParamType": {
                                                     "Type": 55
                                                 },
@@ -1774,7 +1719,7 @@
                                                         },
                                                         {
                                                             "time": 3.1893768310546875,
-                                                            "flags": 65609,
+                                                            "flags": 73,
                                                             "value": {
                                                                 "x": 3.1893768310546875,
                                                                 "y": 118.80000305175781
@@ -1805,9 +1750,6 @@
                                             },
                                             {
                                                 "$type": "TAnimSplineTrack<Vec2>",
-                                                "DefaultValue": {
-                                                    "x": 4.0
-                                                },
                                                 "ParamType": {
                                                     "Type": 56
                                                 },
@@ -1828,7 +1770,7 @@
                                                         },
                                                         {
                                                             "time": 3.1893768310546875,
-                                                            "flags": 65609,
+                                                            "flags": 73,
                                                             "value": {
                                                                 "x": 3.1893768310546875,
                                                                 "y": 69.55000305175781
