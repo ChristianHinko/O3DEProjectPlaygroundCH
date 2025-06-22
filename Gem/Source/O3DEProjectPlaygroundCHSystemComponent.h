@@ -3,16 +3,16 @@
 
 #include <AzCore/Component/Component.h>
 
-#include <O3DETestGame/O3DETestGameBus.h>
+#include <O3DEProjectPlaygroundCH/O3DEProjectPlaygroundCHBus.h>
 
-namespace O3DETestGame
+namespace O3DEProjectPlaygroundCH
 {
-    class O3DETestGameSystemComponent
+    class O3DEProjectPlaygroundCHSystemComponent
         : public AZ::Component
-        , protected O3DETestGameRequestBus::Handler
+        , protected O3DEProjectPlaygroundCHRequestBus::Handler
     {
     public:
-        AZ_COMPONENT_DECL(O3DETestGameSystemComponent);
+        AZ_COMPONENT_DECL(O3DEProjectPlaygroundCHSystemComponent);
 
         static void Reflect(AZ::ReflectContext* context);
 
@@ -21,12 +21,12 @@ namespace O3DETestGame
         static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
         static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
 
-        O3DETestGameSystemComponent();
-        ~O3DETestGameSystemComponent();
+        O3DEProjectPlaygroundCHSystemComponent();
+        ~O3DEProjectPlaygroundCHSystemComponent();
 
     protected:
         ////////////////////////////////////////////////////////////////////////
-        // O3DETestGameRequestBus interface implementation
+        // O3DEProjectPlaygroundCHRequestBus interface implementation
 
         ////////////////////////////////////////////////////////////////////////
 

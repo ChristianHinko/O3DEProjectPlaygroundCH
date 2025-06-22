@@ -3,9 +3,9 @@
 
 #include <AzCore/Component/Component.h>
 
-#include <O3DETestGame/O3DETestGameBus.h>
+#include <O3DEProjectPlaygroundCH/O3DEProjectPlaygroundCHBus.h>
 
-namespace O3DETestGame
+namespace O3DEProjectPlaygroundCH
 {
     class YoComponent
         : public AZ::Component

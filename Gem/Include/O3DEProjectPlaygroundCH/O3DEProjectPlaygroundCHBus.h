@@ -1,22 +1,22 @@
 
 #pragma once
 
-#include <O3DETestGame/O3DETestGameTypeIds.h>
+#include <O3DEProjectPlaygroundCH/O3DEProjectPlaygroundCHTypeIds.h>
 
 #include <AzCore/EBus/EBus.h>
 #include <AzCore/Interface/Interface.h>
 
-namespace O3DETestGame
+namespace O3DEProjectPlaygroundCH
 {
-    class O3DETestGameRequests
+    class O3DEProjectPlaygroundCHRequests
     {
     public:
-        AZ_RTTI(O3DETestGameRequests, O3DETestGameRequestsTypeId);
-        virtual ~O3DETestGameRequests() = default;
+        AZ_RTTI(O3DEProjectPlaygroundCHRequests, O3DEProjectPlaygroundCHRequestsTypeId);
+        virtual ~O3DEProjectPlaygroundCHRequests() = default;
         // Put your public methods here
     };
 
-    class O3DETestGameBusTraits
+    class O3DEProjectPlaygroundCHBusTraits
         : public AZ::EBusTraits
     {
     public:
@@ -27,7 +27,7 @@ namespace O3DETestGame
         //////////////////////////////////////////////////////////////////////////
     };
 
-    using O3DETestGameRequestBus = AZ::EBus<O3DETestGameRequests, O3DETestGameBusTraits>;
-    using O3DETestGameInterface = AZ::Interface<O3DETestGameRequests>;
+    using O3DEProjectPlaygroundCHRequestBus = AZ::EBus<O3DEProjectPlaygroundCHRequests, O3DEProjectPlaygroundCHBusTraits>;
+    using O3DEProjectPlaygroundCHInterface = AZ::Interface<O3DEProjectPlaygroundCHRequests>;
 
-} // namespace O3DETestGame
+} // namespace O3DEProjectPlaygroundCH

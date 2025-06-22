@@ -2,7 +2,7 @@
 # Setup the gem meta variables that includes the "gem_path", "gem_name" and "gem_version"
 # The "pal_dir" variable is also set which refers to the Platform/<platform-name> directory
 # based on the directory of this CMakeLists.txt
-o3de_gem_setup("O3DETestGame")
+o3de_gem_setup("O3DEProjectPlaygroundCH")
 
 # Now that we have the platform abstraction layer (PAL) folder for this folder, thats where we will find the
 # traits for this platform. Traits for a platform are defines for things like whether or not something in this project
@@ -11,13 +11,13 @@ include(${pal_dir}/PAL_${PAL_PLATFORM_NAME_LOWERCASE}.cmake)
 
 # Now that we have loaded our project traits for this platform, see if this project is even supported on this platform.
 # If its not supported we just return after including the unsupported.
-if(NOT PAL_TRAIT_O3DETESTGAME_SUPPORTED)
+if(NOT PAL_TRAIT_O3DEPROJECTPLAYGROUNDCH_SUPPORTED)
     return()
 endif()
 
 # We are on a supported platform, so add the ${gem_name} target
-# Note: We include the common files and the platform specific files which are set in o3detestgame_files.cmake and
-# in ${pal_dir}/o3detestgame_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
+# Note: We include the common files and the platform specific files which are set in o3deprojectplaygroundch_files.cmake and
+# in ${pal_dir}/o3deprojectplaygroundch_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
 
 # The ${gem_name}.Private.Object target is an internal target
 # It should not be used outside of this CMakeLists.txt
@@ -25,8 +25,8 @@ ly_add_target(
     NAME ${gem_name}.Private.Object STATIC
     NAMESPACE Gem
     FILES_CMAKE
-        o3detestgame_files.cmake
-        ${pal_dir}/o3detestgame_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
+        o3deprojectplaygroundch_files.cmake
+        ${pal_dir}/o3deprojectplaygroundch_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
     INCLUDE_DIRECTORIES
         PUBLIC
             Include
@@ -40,8 +40,8 @@ ly_add_target(
     NAME ${gem_name} ${PAL_TRAIT_MONOLITHIC_DRIVEN_MODULE_TYPE}
     NAMESPACE Gem
     FILES_CMAKE
-        o3detestgame_shared_files.cmake
-        ${pal_dir}/o3detestgame_shared_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
+        o3deprojectplaygroundch_shared_files.cmake
+        ${pal_dir}/o3deprojectplaygroundch_shared_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
     INCLUDE_DIRECTORIES
         PUBLIC
             Include
@@ -58,7 +58,7 @@ ly_add_target(
 # is used to bootstrap the gem in monolithic builds to link to the new gem name
 ly_add_source_properties(
 SOURCES
-    Source/O3DETestGameModule.cpp
+    Source/O3DEProjectPlaygroundCHModule.cpp
 PROPERTY COMPILE_DEFINITIONS
     VALUES
         O3DE_GEM_NAME=${gem_name}
@@ -87,5 +87,5 @@ o3de_find_ancestor_project_root(project_path project_name "${CMAKE_CURRENT_SOURC
 # If the project name could not be queried from a project.json file, then fallback
 # to using the name of the project provided when the project template was instantiated
 if (NOT project_name)
-    set(project_name O3DETestGame)
+    set(project_name O3DEProjectPlaygroundCH)
 endif()

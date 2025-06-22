@@ -3,9 +3,9 @@
 
 #include "YoComponent.h"
 
-#include <O3DETestGame/O3DETestGameTypeIds.h>
+#include <O3DEProjectPlaygroundCH/O3DEProjectPlaygroundCHTypeIds.h>
 
-namespace O3DETestGame
+namespace O3DEProjectPlaygroundCH
 {
     AZ_COMPONENT_IMPL(YoComponent, "YoComponent",
         YoComponentTypeId);
@@ -22,12 +22,12 @@ namespace O3DETestGame
 
     void YoComponent::GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided)
     {
-        provided.push_back(AZ_CRC_CE("O3DETestGameYoService"));
+        provided.push_back(AZ_CRC_CE("O3DEProjectPlaygroundCHYoService"));
     }
 
     void YoComponent::GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible)
     {
-        incompatible.push_back(AZ_CRC_CE("O3DETestGameYoService"));
+        incompatible.push_back(AZ_CRC_CE("O3DEProjectPlaygroundCHYoService"));
     }
 
     void YoComponent::GetRequiredServices([[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& required)

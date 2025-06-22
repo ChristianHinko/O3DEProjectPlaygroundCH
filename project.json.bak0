@@ -1,25 +1,25 @@
 {
-    "project_name": "O3DETestGame",
+    "project_name": "O3DEProjectPlaygroundCH",
     "version": "1.0.0",
     "project_id": "{736B9494-7BB3-41B3-AA26-95178B460E73}",
-    "origin": "The primary repo for O3DETestGame goes here: i.e. http://www.mydomain.com",
-    "license": "What license O3DETestGame uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
-    "display_name": "O3DETestGame",
-    "summary": "A short description of O3DETestGame.",
+    "origin": "The primary repo for O3DEProjectPlaygroundCH goes here: i.e. http://www.mydomain.com",
+    "license": "What license O3DEProjectPlaygroundCH uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "display_name": "O3DEProjectPlaygroundCH",
+    "summary": "A short description of O3DEProjectPlaygroundCH.",
     "canonical_tags": [
         "Project"
     ],
     "user_tags": [
-        "O3DETestGame"
+        "O3DEProjectPlaygroundCH"
     ],
     "icon_path": "preview.png",
     "engine": "o3de",
     "external_subdirectories": [
         "Gem"
     ],
-    "restricted": "O3DETestGame",
+    "restricted": "O3DEProjectPlaygroundCH",
     "gem_names": [
-        "O3DETestGame",
+        "O3DEProjectPlaygroundCH",
         "Atom",
         "AudioSystem",
         "CameraFramework",
