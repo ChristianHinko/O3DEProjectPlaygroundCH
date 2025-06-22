@@ -1,0 +1,37 @@
+{
+    "description": "Material authored by following along with O3DE docs tutorial. Renders a model unlit with a single surface color value. The documentation was a little bit outdated and has typos. Docs page link: https://docs.o3de.org/docs/learning-guide/tutorials/rendering/get-started-materialtypes-and-shaders.",
+    "version": 3,
+    "propertyLayout": {
+        "groups": [
+            {
+                "id": "settings",
+                "displayName": "Settings"
+            }
+        ],
+        "properties": {
+            "settings": [
+                {
+                    "id": "color",
+                    "displayName": "Color",
+                    "type": "Color",
+                    "defaultValue": [0.5, 0.0, 0.5],
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_unlitColor"
+                    }
+                }
+            ]
+        }
+    },
+    "shaders": [
+        {
+            "file": "./MyO3DEDocsUnlitMaterial.shader"
+        },
+        {
+            "file": "Shaders/Depth/DepthPass.shader"
+        },
+        {
+            "file": "Shaders/Shadow/Shadowmap.shader"
+        }
+    ]
+}
