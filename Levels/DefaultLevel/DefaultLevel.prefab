@@ -21,7 +21,8 @@
                 "Child Entity Order": [
                     "Entity_[1176639161715]",
                     "Entity_[360169540098]",
-                    "Entity_[454658820610]"
+                    "Entity_[454658820610]",
+                    "Entity_[499728909625]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -120,6 +121,13 @@
                 "Component_[952797371922080273]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 952797371922080273
+                },
+                "EditorSequenceAgentComponent": {
+                    "$type": "EditorSequenceAgentComponent",
+                    "Id": 15231932147022337593,
+                    "SequenceComponentEntityIds": [
+                        "Entity_[499728909625]"
+                    ]
                 }
             }
         },
@@ -233,7 +241,6 @@
                     "Id": 16880285896855930892,
                     "Controller": {
                         "Configuration": {
-                            "Orthographic": true,
                             "Orthographic Half Width": 10.0,
                             "Field of View": 60.0
                         }
@@ -389,6 +396,11 @@
                     "Id": 6472623349872972660,
                     "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
+                        "Translate": [
+                            -1.849735140800476,
+                            -3.01975679397583,
+                            0.003228400368243456
+                        ],
                         "Rotate": [
                             0.0,
                             0.10000000149011612,
@@ -421,7 +433,7 @@
                 },
                 "EditorMaterialComponent": {
                     "$type": "EditorMaterialComponent",
-                    "Id": 17762008395407796752,
+                    "Id": 5050972105599154772,
                     "Controller": {
                         "Configuration": {
                             "materials": [
@@ -432,14 +444,22 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{51F224A6-91A0-52CE-B358-0B43EFC83960}"
-                                            }
+                                                "guid": "{9E9C6EBF-17C3-59E1-AA20-D767D0110C8E}"
+                                            },
+                                            "assetHint": "assets/untitled_1.azmaterial"
                                         }
                                     }
                                 }
                             ]
                         }
                     }
+                },
+                "EditorSequenceAgentComponent": {
+                    "$type": "EditorSequenceAgentComponent",
+                    "Id": 5284131196408790938,
+                    "SequenceComponentEntityIds": [
+                        "Entity_[499728909625]"
+                    ]
                 }
             }
         },
@@ -542,6 +562,20 @@
                                 "assetHint": "lightingpresets/highcontrast/goegap_4k_iblglobalcm_iblspecular.exr.streamingimage"
                             }
                         }
+                    },
+                    "diffuseImageAsset": {
+                        "assetId": {
+                            "guid": "{3FD09945-D0F2-55C8-B9AF-B2FD421FE3BE}",
+                            "subId": 3000
+                        },
+                        "assetHint": "lightingpresets/highcontrast/goegap_4k_iblglobalcm_ibldiffuse.exr.streamingimage"
+                    },
+                    "specularImageAsset": {
+                        "assetId": {
+                            "guid": "{3FD09945-D0F2-55C8-B9AF-B2FD421FE3BE}",
+                            "subId": 2000
+                        },
+                        "assetHint": "lightingpresets/highcontrast/goegap_4k_iblglobalcm_iblspecular.exr.streamingimage"
                     }
                 },
                 "Component_[14994774102579326069]": {
@@ -576,6 +610,13 @@
                 "Component_[931091830724002070]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 931091830724002070
+                },
+                "EditorSequenceAgentComponent": {
+                    "$type": "EditorSequenceAgentComponent",
+                    "Id": 7829350808545794536,
+                    "SequenceComponentEntityIds": [
+                        "Entity_[499728909625]"
+                    ]
                 }
             }
         },
@@ -684,6 +725,1181 @@
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 10922315088423645086,
                     "Parent Entity": "Entity_[1146574390643]"
+                }
+            }
+        },
+        "Entity_[499728909625]": {
+            "Id": "Entity_[499728909625]",
+            "Name": "MySequ",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5163891195409976852
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 10045364706992146987
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1309557421706304818
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 14583078941858747792
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 18110673591400487156
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 18018248400631576212
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 3883358015945029738
+                },
+                "EditorSequenceComponent": {
+                    "$type": "EditorSequenceComponent",
+                    "Id": 15830445044517955293,
+                    "Sequence": {
+                        "$type": "CAnimSequence",
+                        "Name": "MySequ",
+                        "SequenceEntityId": "Entity_[499728909625]",
+                        "Flags": 5,
+                        "TimeRange": {
+                            "End": 4.0
+                        },
+                        "ID": 1,
+                        "Nodes": [
+                            {
+                                "$type": "CAnimAzEntityNode",
+                                "ID": 1,
+                                "Name": "Shader Ball",
+                                "Entity": "Entity_[1172344194419]"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 2,
+                                "Name": "Mesh",
+                                "Tracks": [
+                                    {
+                                        "$type": "TAnimSplineTrack<Vec2>",
+                                        "ParamType": {
+                                            "Type": 8,
+                                            "Name": "SortKey"
+                                        },
+                                        "Spline": {
+                                            "Keys": [
+                                                {
+                                                    "flags": 73,
+                                                    "ds": {
+                                                        "x": 1.0
+                                                    },
+                                                    "dd": {
+                                                        "x": 0.4000000059604645
+                                                    }
+                                                },
+                                                {
+                                                    "time": 0.442864328622818,
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "x": 0.442864328622818,
+                                                        "y": -0.545438289642334
+                                                    },
+                                                    "ds": {
+                                                        "x": 0.13333334028720856
+                                                    },
+                                                    "dd": {
+                                                        "x": 0.13333334028720856
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Id": 12
+                                    },
+                                    {
+                                        "$type": "CBoolTrack",
+                                        "Range": {
+                                            "End": 4.0
+                                        },
+                                        "ParamType": {
+                                            "Type": 8,
+                                            "Name": "Visibility"
+                                        },
+                                        "Keys": [
+                                            {},
+                                            {
+                                                "Time": 0.3100000023841858
+                                            },
+                                            {
+                                                "Time": 0.8999999761581421
+                                            },
+                                            {
+                                                "Time": 1.100000023841858
+                                            },
+                                            {
+                                                "Time": 1.2999999523162842
+                                            }
+                                        ],
+                                        "Id": 13
+                                    }
+                                ],
+                                "Parent": 1,
+                                "ComponentID": 6495255223970673916,
+                                "ComponentTypeID": "{DCE68F6E-2E16-4CB4-A834-B6C2F900A7E9}"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 3,
+                                "Name": "Transform",
+                                "Tracks": [
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 1,
+                                            "Name": "Position"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": -0.8322210311889648
+                                                },
+                                                "ParamType": {
+                                                    "Type": 51
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 100,
+                                                            "dd": {
+                                                                "x": 0.29246842861175537,
+                                                                "y": -0.4092332720756531
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.8774052858352661,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 0.8774052858352661,
+                                                                "y": -1.2276997566223145
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.3333333432674408
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.3333333432674408
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 2
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": -1.466855525970459
+                                                },
+                                                "ParamType": {
+                                                    "Type": 52
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 100,
+                                                            "dd": {
+                                                                "x": 0.30523836612701416,
+                                                                "y": -0.7608880400657654
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.9157150983810425,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 0.9157150983810425,
+                                                                "y": -2.2826640605926514
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.3333333432674408
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.3333333432674408
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 3
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 0.49884113669395447
+                                                },
+                                                "ParamType": {
+                                                    "Type": 53
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 100,
+                                                            "dd": {
+                                                                "x": 0.2090534269809723,
+                                                                "y": 0.22670531272888184
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.6271602511405945,
+                                                            "flags": 100,
+                                                            "value": {
+                                                                "x": 0.6271602511405945,
+                                                                "y": 0.6801159381866455
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.2090534269809723,
+                                                                "y": 0.22670531272888184
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 4
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "X",
+                                            "Y",
+                                            "Z",
+                                            "W"
+                                        ],
+                                        "ValueType": 1,
+                                        "Expanded": true,
+                                        "Id": 1
+                                    },
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 2,
+                                            "Name": "Rotation"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "ParamType": {
+                                                    "Type": 54
+                                                },
+                                                "Id": 6
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": -0.10000000149011612
+                                                },
+                                                "ParamType": {
+                                                    "Type": 55
+                                                },
+                                                "Id": 7
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 180.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 56
+                                                },
+                                                "Id": 8
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "Pitch",
+                                            "Roll",
+                                            "Yaw",
+                                            "W"
+                                        ],
+                                        "ValueType": 2,
+                                        "Id": 5
+                                    }
+                                ],
+                                "Parent": 1,
+                                "ComponentID": 6472623349872972660,
+                                "ComponentTypeID": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}"
+                            },
+                            {
+                                "$type": "CCommentNode",
+                                "ID": 4,
+                                "Name": "Comment",
+                                "Tracks": [
+                                    {
+                                        "$type": "TAnimSplineTrack<Vec2>",
+                                        "DefaultValue": {
+                                            "y": 50.0
+                                        },
+                                        "ParamType": {
+                                            "Type": 51
+                                        },
+                                        "Spline": {
+                                            "Keys": [
+                                                {
+                                                    "time": 0.6441406011581421,
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "x": 0.6441406011581421,
+                                                        "y": 50.0
+                                                    },
+                                                    "ds": {
+                                                        "x": 1.0
+                                                    },
+                                                    "dd": {
+                                                        "x": 1.0
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Id": 10
+                                    },
+                                    {
+                                        "$type": "TAnimSplineTrack<Vec2>",
+                                        "DefaultValue": {
+                                            "y": 50.0
+                                        },
+                                        "ParamType": {
+                                            "Type": 52
+                                        },
+                                        "Spline": {
+                                            "Keys": [
+                                                {
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "y": 50.0
+                                                    },
+                                                    "ds": {
+                                                        "x": 1.0
+                                                    },
+                                                    "dd": {
+                                                        "x": 0.7714828848838806
+                                                    }
+                                                },
+                                                {
+                                                    "time": 0.9167940020561218,
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "x": 0.9167940020561218,
+                                                        "y": 50.862022399902344
+                                                    },
+                                                    "ds": {
+                                                        "x": 0.2666666805744171
+                                                    },
+                                                    "dd": {
+                                                        "x": 0.2666666805744171
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Id": 11
+                                    },
+                                    {
+                                        "$type": "CCommentTrack",
+                                        "Range": {
+                                            "End": 4.0
+                                        },
+                                        "ParamType": {
+                                            "Type": 70
+                                        },
+                                        "Keys": [
+                                            {
+                                                "Time": 0.3967284560203552,
+                                                "Comment": "Heyy"
+                                            }
+                                        ],
+                                        "Id": 9
+                                    }
+                                ]
+                            },
+                            {
+                                "$type": "CAnimAzEntityNode",
+                                "ID": 5,
+                                "Name": "Sun",
+                                "Entity": "Entity_[1155164325235]"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 6,
+                                "Name": "Directional Light",
+                                "Tracks": [
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 8,
+                                            "Name": "Color"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 255.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 82
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.75,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 0.75,
+                                                                "y": 153.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.3333333432674408
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.3333333432674408
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 9,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 24
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 255.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 83
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.75,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 0.75,
+                                                                "y": 162.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.3333333432674408
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.3333333432674408
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 9,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 25
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 255.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 84
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 0.75,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 0.75,
+                                                                "y": 218.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.3333333432674408
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.3333333432674408
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 9,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": 255.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.75
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 26
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "Red",
+                                            "Green",
+                                            "Blue",
+                                            "W"
+                                        ],
+                                        "ValueType": 20,
+                                        "Expanded": true,
+                                        "Id": 23
+                                    },
+                                    {
+                                        "$type": "TAnimSplineTrack<Vec2>",
+                                        "DefaultValue": {
+                                            "y": 1.0
+                                        },
+                                        "ParamType": {
+                                            "Type": 8,
+                                            "Name": "Intensity"
+                                        },
+                                        "Spline": {
+                                            "Keys": [
+                                                {
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "y": 1.0
+                                                    },
+                                                    "ds": {
+                                                        "x": 1.0
+                                                    },
+                                                    "dd": {
+                                                        "x": 1.0
+                                                    }
+                                                },
+                                                {
+                                                    "time": 1.2329107522964478,
+                                                    "flags": 73,
+                                                    "value": {
+                                                        "x": 1.2329107522964478,
+                                                        "y": -1.7472543716430664
+                                                    },
+                                                    "ds": {
+                                                        "y": -1.8343164920806885
+                                                    },
+                                                    "dd": {
+                                                        "y": -1.8343164920806885
+                                                    }
+                                                },
+                                                {
+                                                    "time": 2.0,
+                                                    "flags": 9,
+                                                    "value": {
+                                                        "x": 2.0,
+                                                        "y": 1.0
+                                                    },
+                                                    "ds": {
+                                                        "x": 0.7670892477035522
+                                                    },
+                                                    "dd": {
+                                                        "x": 0.2209538221359253
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Id": 22
+                                    }
+                                ],
+                                "Parent": 5,
+                                "ComponentID": 7378860763541895402,
+                                "ComponentTypeID": "{45B97527-6E72-411B-BC23-00068CF01580}"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 7,
+                                "Name": "Transform",
+                                "Tracks": [
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 1,
+                                            "Name": "Position"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "ParamType": {
+                                                    "Type": 51
+                                                },
+                                                "Id": 15
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "ParamType": {
+                                                    "Type": 52
+                                                },
+                                                "Id": 16
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "y": 13.487043380737305
+                                                },
+                                                "ParamType": {
+                                                    "Type": 53
+                                                },
+                                                "Id": 17
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "X",
+                                            "Y",
+                                            "Z",
+                                            "W"
+                                        ],
+                                        "ValueType": 1,
+                                        "Id": 14
+                                    },
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 2,
+                                            "Name": "Rotation"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 3.5999999046325684,
+                                                    "y": -75.59520721435547
+                                                },
+                                                "ParamType": {
+                                                    "Type": 54
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": -75.59520721435547
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.8999999761581421
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": -75.59520721435547
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.6666666865348816
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.6666666865348816
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.5999999046325684,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 3.5999999046325684,
+                                                                "y": 27.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 19
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 3.5999999046325684,
+                                                    "y": -15.540212631225586
+                                                },
+                                                "ParamType": {
+                                                    "Type": 55
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": -15.540212631225586
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.8999999761581421
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": -15.540212631225586
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.6666666865348816
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.6666666865348816
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.5999999046325684,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 3.5999999046325684,
+                                                                "y": -79.19999694824219
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 20
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 3.5999999046325684,
+                                                    "y": -3.0640413761138916
+                                                },
+                                                "ParamType": {
+                                                    "Type": 56
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "y": -3.0640413761138916
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.8999999761581421
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 2.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.0,
+                                                                "y": -3.0640413761138916
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.6666666865348816
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.6666666865348816
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.5999999046325684,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 3.5999999046325684,
+                                                                "y": 8.649999618530273
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 21
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "Pitch",
+                                            "Roll",
+                                            "Yaw",
+                                            "W"
+                                        ],
+                                        "ValueType": 2,
+                                        "Expanded": true,
+                                        "Id": 18
+                                    }
+                                ],
+                                "Parent": 5,
+                                "ComponentID": 7892834440890947578,
+                                "ComponentTypeID": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}"
+                            },
+                            {
+                                "$type": "CAnimAzEntityNode",
+                                "ID": 8,
+                                "Name": "Global Sky",
+                                "Flags": 6,
+                                "Entity": "Entity_[1180934129011]"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 9,
+                                "Name": "Global Skylight (IBL)",
+                                "Parent": 8,
+                                "ComponentID": 14936200426671614999,
+                                "ComponentTypeID": "{6202F16C-DDF9-4026-9479-F5BDC621D372}"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 10,
+                                "Name": "Transform",
+                                "Tracks": [
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 1,
+                                            "Name": "Position"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 1.1444090604782104
+                                                },
+                                                "ParamType": {
+                                                    "Type": 51
+                                                },
+                                                "Id": 28
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 1.1444090604782104
+                                                },
+                                                "ParamType": {
+                                                    "Type": 52
+                                                },
+                                                "Id": 29
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 1.1444090604782104
+                                                },
+                                                "ParamType": {
+                                                    "Type": 53
+                                                },
+                                                "Id": 30
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "X",
+                                            "Y",
+                                            "Z",
+                                            "W"
+                                        ],
+                                        "ValueType": 1,
+                                        "Id": 27
+                                    },
+                                    {
+                                        "$type": "CCompoundSplineTrack",
+                                        "Flags": 0,
+                                        "ParamType": {
+                                            "Type": 2,
+                                            "Name": "Rotation"
+                                        },
+                                        "NumSubTracks": 3,
+                                        "SubTracks": [
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 4.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 54
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "time": 2.4000000953674316,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.4000000953674316
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.7893767356872559
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.1893768310546875,
+                                                            "flags": 65609,
+                                                            "value": {
+                                                                "x": 3.1893768310546875,
+                                                                "y": -52.20000076293945
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 4.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 4.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.2702077329158783
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.2702077329158783
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 32
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 4.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 55
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "time": 2.4000000953674316,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.4000000953674316
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.7893767356872559
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.1893768310546875,
+                                                            "flags": 65609,
+                                                            "value": {
+                                                                "x": 3.1893768310546875,
+                                                                "y": 118.80000305175781
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 4.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 4.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.2702077329158783
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.2702077329158783
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 33
+                                            },
+                                            {
+                                                "$type": "TAnimSplineTrack<Vec2>",
+                                                "DefaultValue": {
+                                                    "x": 4.0
+                                                },
+                                                "ParamType": {
+                                                    "Type": 56
+                                                },
+                                                "Spline": {
+                                                    "Keys": [
+                                                        {
+                                                            "time": 2.4000000953674316,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 2.4000000953674316
+                                                            },
+                                                            "ds": {
+                                                                "x": 1.0
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.7893767356872559
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 3.1893768310546875,
+                                                            "flags": 65609,
+                                                            "value": {
+                                                                "x": 3.1893768310546875,
+                                                                "y": 69.55000305175781
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.5333333015441895
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.5333333015441895
+                                                            }
+                                                        },
+                                                        {
+                                                            "time": 4.0,
+                                                            "flags": 73,
+                                                            "value": {
+                                                                "x": 4.0
+                                                            },
+                                                            "ds": {
+                                                                "x": 0.2702077329158783
+                                                            },
+                                                            "dd": {
+                                                                "x": 0.2702077329158783
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "Id": 34
+                                            },
+                                            null
+                                        ],
+                                        "SubTrackNames": [
+                                            "Pitch",
+                                            "Roll",
+                                            "Yaw",
+                                            "W"
+                                        ],
+                                        "ValueType": 2,
+                                        "Expanded": true,
+                                        "Id": 31
+                                    }
+                                ],
+                                "Parent": 8,
+                                "ComponentID": 6644513399057217122,
+                                "ComponentTypeID": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}"
+                            },
+                            {
+                                "$type": "CAnimComponentNode",
+                                "ID": 11,
+                                "Name": "HDRi Skybox",
+                                "Parent": 8,
+                                "ComponentID": 11231930600558681245,
+                                "ComponentTypeID": "{B736789D-0101-4D17-A932-B5224EEFA8B4}"
+                            }
+                        ]
+                    }
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11345174630677216977
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 3164165516965660254,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            -12.55946159362793,
+                            4.94495964050293,
+                            15.211564064025879
+                        ]
+                    }
                 }
             }
         }

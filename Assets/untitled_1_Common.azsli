@@ -97,21 +97,21 @@ bool NeedsTangentFrame()
 #if MATERIALPIPELINE_SHADER_HAS_PIXEL_STAGE
 
 #include <Atom/Feature/Common/Assets/Shaders/Materials/BasePBR/BasePBR_VertexData.azsli>
-#include "untitled_VertexEval.azsli"
+#include "untitled_1_VertexEval.azsli"
 
 #include <Atom/Feature/Common/Assets/Shaders/Materials/StandardPBR/StandardPBR_PixelGeometryData.azsli>
-#include "untitled_PixelGeometryEval.azsli"
+#include "untitled_1_PixelGeometryEval.azsli"
 
 #include <Atom/Feature/Common/Assets/Shaders/Materials/StandardPBR/StandardPBR_SurfaceData.azsli>
-#include "untitled_SurfaceEval.azsli"
+#include "untitled_1_SurfaceEval.azsli"
 
 #elif MATERIALPIPELINE_SHADER_HAS_GEOMETRIC_PIXEL_STAGE
     
 #include <Atom/Feature/Common/Assets/Shaders/Materials/BasePBR/BasePBR_VertexData.azsli>
-#include "untitled_VertexEval.azsli"
+#include "untitled_1_VertexEval.azsli"
 
 #include <Atom/Feature/Common/Assets/Shaders/Materials/StandardPBR/StandardPBR_PixelGeometryData.azsli>
-#include "untitled_PixelGeometryEval.azsli"
+#include "untitled_1_PixelGeometryEval.azsli"
     
 void EvaluateSurface(VsOutput IN, PixelGeometryData geoData)
 {
@@ -141,7 +141,7 @@ float inOpacityFactor = 1;
 
 #else
 
-#include "untitled_DepthVertexData.azsli"
-#include "untitled_DepthVertexEval.azsli"
+#include "untitled_1_DepthVertexData.azsli"
+#include "untitled_1_DepthVertexEval.azsli"
 
 #endif
