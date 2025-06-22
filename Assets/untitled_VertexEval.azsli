@@ -51,15 +51,15 @@ VsOutput EvaluateVertexGeometry_untitled(
     const bool placeHolder = MaterialSrg::m_placeHolder;
 
     // O3DE_GENERATED_INSTRUCTIONS_BEGIN: inPositionOffset
-float3 node23_normal_outNormal = O3DE_MC_NORMAL;
 float node4_time_outTime = SceneSrg::m_time;
 float node25_float_constant_inValue = 0.1;
 float node25_float_constant_outValue = node25_float_constant_inValue;
-float3 node24_multiply_inValue1 = node23_normal_outNormal;
-float3 node24_multiply_inValue2 = node25_float_constant_outValue;
-float3 node24_multiply_outValue = node24_multiply_inValue1 * node24_multiply_inValue2;
+float3 node28_world_normal_outNormal = O3DE_MC_NORMAL_WS;
 float node27_cosine_inValue = node4_time_outTime;
 float node27_cosine_outValue = cos(node27_cosine_inValue);
+float3 node24_multiply_inValue1 = node28_world_normal_outNormal;
+float3 node24_multiply_inValue2 = node25_float_constant_outValue;
+float3 node24_multiply_outValue = node24_multiply_inValue1 * node24_multiply_inValue2;
 float node10_absolute_value_inValue = node27_cosine_outValue;
 float node10_absolute_value_outValue = abs(node10_absolute_value_inValue);
 float3 node26_multiply_inValue1 = node24_multiply_outValue;

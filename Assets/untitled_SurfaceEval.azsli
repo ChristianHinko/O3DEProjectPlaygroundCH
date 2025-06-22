@@ -51,18 +51,18 @@ Surface EvaluateSurface_untitled(
     const bool placeHolder = MaterialSrg::m_placeHolder;
 
     // O3DE_GENERATED_INSTRUCTIONS_BEGIN: inNormal, inBaseColor, inMetallic, inRoughness, inSpecularF0Factor, inEmissive, inAlpha, inOpacityFactor, inDiffuseAmbientOcclusion, inSpecularOcclusion, inClearCoatFactor, inClearCoatRoughness, inClearCoatNormal, 
-float node21_float_constant_inValue = 1;
-float node21_float_constant_outValue = node21_float_constant_inValue;
-float4 node6_float4_constant_inValue = {1, 0.75, 0.5, 1};
-float4 node6_float4_constant_outValue = node6_float4_constant_inValue;
-float node4_time_outTime = SceneSrg::m_time;
 float node22_float_constant_inValue = 1;
 float node22_float_constant_outValue = node22_float_constant_inValue;
+float node4_time_outTime = SceneSrg::m_time;
+float4 node6_float4_constant_inValue = {1, 0.75, 0.5, 1};
+float4 node6_float4_constant_outValue = node6_float4_constant_inValue;
+float node21_float_constant_inValue = 1;
+float node21_float_constant_outValue = node21_float_constant_inValue;
+float node27_cosine_inValue = node4_time_outTime;
+float node27_cosine_outValue = cos(node27_cosine_inValue);
 float4 node7_multiply_inValue1 = node6_float4_constant_outValue;
 float4 node7_multiply_inValue2 = node22_float_constant_outValue;
 float4 node7_multiply_outValue = node7_multiply_inValue1 * node7_multiply_inValue2;
-float node27_cosine_inValue = node4_time_outTime;
-float node27_cosine_outValue = cos(node27_cosine_inValue);
 float node10_absolute_value_inValue = node27_cosine_outValue;
 float node10_absolute_value_outValue = abs(node10_absolute_value_inValue);
 float node20_subtract_inValue1 = node21_float_constant_outValue;
