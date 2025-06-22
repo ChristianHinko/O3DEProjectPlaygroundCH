@@ -1,0 +1,37 @@
+{
+    "description": "My stuff.",
+    "version": 1,
+    "propertyLayout": {
+        "groups": [
+            {
+                "id": "settings",
+                "displayName": "Settings"
+            }
+        ],
+        "properties": {
+            "settings": [
+                {
+                    "id": "myProperty",
+                    "displayName": "My Property",
+                    "type": "float",
+                    "defaultValue": 1.0,
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_myProperty"
+                    }
+                }
+            ]
+        }
+    },
+    "shaders": [
+        {
+            "file": "./MyOwnHandWrittenMaterial.shader"
+        },
+        {
+            "file": "Shaders/Depth/DepthPass.shader"
+        },
+        {
+            "file": "Shaders/Shadow/Shadowmap.shader"
+        }
+    ]
+}

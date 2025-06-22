@@ -1,0 +1,7 @@
+{
+    "materialType": "MyOwnHandWrittenMaterial.materialtype",
+    "materialTypeVersion": 1,
+    "propertyValues": {
+        "settings.myProperty": 0.5
+    }
+}

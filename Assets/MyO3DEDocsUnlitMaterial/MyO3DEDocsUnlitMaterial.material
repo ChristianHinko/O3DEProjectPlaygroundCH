@@ -1,0 +1,12 @@
+{
+    "materialType": "MyO3DEDocsUnlitMaterial.materialtype",
+    "materialTypeVersion": 3,
+    "propertyValues": {
+        "settings.color": [
+            0.12100404500961304,
+            0.574288547039032,
+            0.5419394373893738,
+            1.0
+        ]
+    }
+}
