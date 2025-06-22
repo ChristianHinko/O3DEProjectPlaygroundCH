@@ -444,9 +444,8 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{51F224A6-91A0-52CE-B358-0B43EFC83960}"
-                                            },
-                                            "assetHint": "assets/untitled.azmaterial"
+                                                "guid": "{3979FFC5-D92F-54F3-BE39-984A1A410B0C}"
+                                            }
                                         }
                                     }
                                 }
