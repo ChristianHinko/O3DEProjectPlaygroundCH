@@ -1,1 +1,1 @@
-# O3DETestGame
+# O3DEProjectPlaygroundCH
