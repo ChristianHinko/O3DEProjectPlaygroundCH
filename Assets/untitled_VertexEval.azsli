@@ -51,7 +51,21 @@ VsOutput EvaluateVertexGeometry_untitled(
     const bool placeHolder = MaterialSrg::m_placeHolder;
 
     // O3DE_GENERATED_INSTRUCTIONS_BEGIN: inPositionOffset
-float3 inPositionOffset = {0, 0, 0};
+float3 node23_normal_outNormal = O3DE_MC_NORMAL;
+float node4_time_outTime = SceneSrg::m_time;
+float node25_float_constant_inValue = 0.1;
+float node25_float_constant_outValue = node25_float_constant_inValue;
+float3 node24_multiply_inValue1 = node23_normal_outNormal;
+float3 node24_multiply_inValue2 = node25_float_constant_outValue;
+float3 node24_multiply_outValue = node24_multiply_inValue1 * node24_multiply_inValue2;
+float node27_cosine_inValue = node4_time_outTime;
+float node27_cosine_outValue = cos(node27_cosine_inValue);
+float node10_absolute_value_inValue = node27_cosine_outValue;
+float node10_absolute_value_outValue = abs(node10_absolute_value_inValue);
+float3 node26_multiply_inValue1 = node24_multiply_outValue;
+float3 node26_multiply_inValue2 = node10_absolute_value_outValue;
+float3 node26_multiply_outValue = node26_multiply_inValue1 * node26_multiply_inValue2;
+float3 inPositionOffset = node26_multiply_outValue;
     // O3DE_GENERATED_INSTRUCTIONS_END
 
     #undef O3DE_MC_UV

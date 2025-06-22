@@ -403,7 +403,7 @@
                         ],
                         "Rotate": [
                             0.0,
-                            0.10000000149011612,
+                            0.0,
                             180.0
                         ]
                     }
@@ -445,7 +445,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{51F224A6-91A0-52CE-B358-0B43EFC83960}"
-                                            }
+                                            },
+                                            "assetHint": "assets/untitled.azmaterial"
                                         }
                                     }
                                 }
