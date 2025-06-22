@@ -1,0 +1,44 @@
+#pragma once
+
+#include <viewsrg_all.srgi>
+#include <Atom/Features/PBR/DefaultObjectSrg.azsli>
+#include <Atom/Features/SrgSemantics.azsli>
+
+ShaderResourceGroup MyOwnHandWrittenMaterialSrg : SRG_PerMaterial
+{
+    float m_myProperty;
+}
+
+struct VSInput
+{
+    float3 m_position : POSITION;
+};
+
+struct VSOutput
+{
+    float4 m_position : SV_Position;
+};
+
+struct PSOutput
+{
+    float4 m_color : SV_Target0;
+};
+
+VSOutput MainVS(VSInput vsInput)
+{
+    VSOutput vsOutput;
+
+    float3 worldPosition = mul(ObjectSrg::GetWorldMatrix(), float4(vsInput.m_position, 1.0)).xyz;
+    vsOutput.m_position = mul(ViewSrg::m_viewProjectionMatrix, float4(worldPosition, 1.0));
+
+    return vsOutput;
+}
+
+PSOutput MainPS(VSOutput vsOutput)
+{
+    PSOutput psOutput;
+
+    psOutput.m_color = float4(mul(MyOwnHandWrittenMaterialSrg::m_myProperty, float3(1.0, 1.0, 1.0)), -1.0);
+
+    return psOutput;
+}
