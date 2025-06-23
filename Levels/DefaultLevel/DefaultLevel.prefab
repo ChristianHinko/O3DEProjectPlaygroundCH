@@ -22,7 +22,8 @@
                     "Entity_[1176639161715]",
                     "Entity_[360169540098]",
                     "Entity_[454658820610]",
-                    "Entity_[499728909625]"
+                    "Entity_[499728909625]",
+                    "Entity_[1330160014503]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -552,6 +553,62 @@
                     "SequenceComponentEntityIds": [
                         "Entity_[499728909625]"
                     ]
+                }
+            }
+        },
+        "Entity_[1330160014503]": {
+            "Id": "Entity_[1330160014503]",
+            "Name": "PostFX",
+            "Components": {
+                "AZ::Render::EditorPostFxLayerComponent": {
+                    "$type": "AZ::Render::EditorPostFxLayerComponent",
+                    "Id": 8328572809458260653
+                },
+                "AZ::Render::EditorSsaoComponent": {
+                    "$type": "AZ::Render::EditorSsaoComponent",
+                    "Id": 673677215631297985,
+                    "Controller": {
+                        "Configuration": {
+                            "Enabled": false
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 9433271407119135794
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11322021807511989380
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 5735129955510531917
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1845838072397350866
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 5254516875166307617
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5361414118434442608
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12136700855692234211
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 8337451441350788852
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 13923019128183189388,
+                    "Parent Entity": "Entity_[1146574390643]"
                 }
             }
         },
