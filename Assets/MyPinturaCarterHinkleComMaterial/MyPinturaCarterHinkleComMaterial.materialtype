@@ -1,0 +1,83 @@
+{
+    "description": "A port of the default fragment shader implemented by https://pintura.carterhinkle.com/.",
+    "version": 1,
+    "propertyLayout": {
+        "groups": [
+            {
+                "id": "settings",
+                "displayName": "Settings"
+            }
+        ],
+        "properties": {
+            "settings": [
+                {
+                    "id": "colorA",
+                    "displayName": "Color A",
+                    "type": "Color",
+                    "defaultValue": [
+                        0.20155641436576843,
+                        0.049713894724845886,
+                        0.09758144617080688
+                    ],
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_colorA"
+                    }
+                },
+                {
+                    "id": "colorB",
+                    "displayName": "Color B",
+                    "type": "Color",
+                    "defaultValue": [
+                        0.8307774662971497,
+                        0.14702068269252777,
+                        0.1589532345533371
+                    ],
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_colorB"
+                    }
+                },
+                {
+                    "id": "colorC",
+                    "displayName": "Color C",
+                    "type": "Color",
+                    "defaultValue": [
+                        0.9473106265068054,
+                        0.39157700538635254,
+                        0.17788967490196228
+                    ],
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_colorC"
+                    }
+                },
+                {
+                    "id": "colorD",
+                    "displayName": "Color D",
+                    "type": "Color",
+                    "defaultValue": [
+                        1.0,
+                        0.921583890914917,
+                        0.6514076590538025
+                    ],
+                    "connection": {
+                        "type": "ShaderInput",
+                        "id": "m_colorD"
+                    }
+                }
+            ]
+        }
+    },
+    "shaders": [
+        {
+            "file": "./MyPinturaCarterHinkleComMaterial.shader"
+        },
+        {
+            "file": "Shaders/Depth/DepthPass.shader"
+        },
+        {
+            "file": "Shaders/Shadow/Shadowmap.shader"
+        }
+    ]
+}
