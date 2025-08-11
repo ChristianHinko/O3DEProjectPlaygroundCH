@@ -15,6 +15,7 @@
     "icon_path": "preview.png",
     "engine": "o3de",
     "external_subdirectories": [
+        "Dependencies/Gems/O3DEGemPlaygroundCH",
         "Gem"
     ],
     "restricted": "O3DEProjectPlaygroundCH",
@@ -31,6 +32,7 @@
         "LandscapeCanvas",
         "LyShine",
         "MiniAudio",
+        "O3DEGemPlaygroundCH",
         "O3DEProjectPlaygroundCH",
         "PhysX",
         "PrefabBuilder",
