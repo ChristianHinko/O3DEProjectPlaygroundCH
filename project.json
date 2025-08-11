@@ -5,7 +5,7 @@
     "origin": "The primary repo for O3DEProjectPlaygroundCH goes here: i.e. http://www.mydomain.com",
     "license": "What license O3DEProjectPlaygroundCH uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
     "display_name": "O3DEProjectPlaygroundCH",
-    "summary": "A short description of O3DEProjectPlaygroundCH.",
+    "summary": "A playground to experiment with the O3DE game engine.",
     "canonical_tags": [
         "Project"
     ],
